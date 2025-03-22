@@ -6,7 +6,7 @@ try:
     f = open("poem.txt")
     # Our usual file-reading idiom
     while True:
-        line = f.readline()
+        line = f.readline(5_000_000)
         if len(line) == 0:
             break
         print(line, end='')
