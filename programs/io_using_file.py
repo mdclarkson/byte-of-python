@@ -16,7 +16,7 @@ f.close()
 # 'r'ead mode is assumed by default
 f = open('poem.txt')
 while True:
-    line = f.readline()
+    line = f.readline(5_000_000)
     # Zero length indicates EOF
     if len(line) == 0:
         break
